@@ -1,0 +1,122 @@
+* {
+    padding: 0;
+    margin: 0;
+    color: #0077CC;
+
+}
+.header{
+    height: 40px;
+}
+.page{
+    height: 100vh;
+}
+
+.header{
+    margin: 0px 5px;
+}
+
+.main{
+    display: flex;
+    justify-content: center;
+}
+
+.sidebar-left{
+    display: flex;
+    width: 300px;
+    flex-direction: column;
+
+}
+
+._right{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.block-help{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 5px;
+    color: black;
+}
+
+.block-header{
+    display: flex;
+    justify-content: space-between;
+    padding: 5px 0px;
+}
+.sidebar-left__aside{
+    margin-top: 10px;
+}
+
+.center{
+    margin-left: 40px;
+    width: 940px;
+}
+.content{
+    display: flex;
+}
+.content__main{
+    width: 600px;
+    margin-right: 40px;
+}
+
+.search{
+    display: flex;
+    flex-direction: row;
+    margin: 10px 0px;
+}
+
+.content__news{
+    display: flex;
+    flex-direction: column;
+    padding: 5px 0px;
+}
+.main__more{
+    display: flex;
+    margin-top: 12px;
+}
+
+.block-1{
+    width: 200px;
+    height: 65px;
+    background-color: red;
+}
+.block-2{
+    width: 100px;
+    height: 65px;
+    background-color: blue;
+}
+.block-3{
+    width: 100px;
+    height: 65px;
+    background-color: yellow;
+}
+.block-4{
+    width: 200px;
+    height: 65px;
+    background-color: green;
+}
+
+.sidebar-right{
+    width: 300px;
+}
+
+.sidebar-right__aside{
+    width: 300px;
+    height: 300px;
+    position: relative;
+}
+.sidebar-right__games{
+    display: flex;
+    margin-top: 10px;
+    justify-content: space-between;
+}
+
+.sidebar-right__support{
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 75px;
+}
+.support__item{
+    margin-left: 10px;
+}

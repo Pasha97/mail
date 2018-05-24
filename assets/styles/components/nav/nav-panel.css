@@ -1,0 +1,9 @@
+
+/*nav центральное*/
+.nav-panel{
+    display: flex;
+}
+
+.nav-panel__item{
+    margin-right: 20px;
+}

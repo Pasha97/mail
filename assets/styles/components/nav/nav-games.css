@@ -1,0 +1,10 @@
+
+/*nav игры*/
+
+.nav-games{
+    margin-top: 10px;
+    display: flex;
+}
+.nav-games__items{
+    margin-right: 20px;
+}

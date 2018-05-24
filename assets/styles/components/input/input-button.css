@@ -1,0 +1,41 @@
+
+
+/*Поиск*/
+.input__search{
+    width: 835px;
+    height: 40px;
+}
+/*Кнопка найти */
+.input__button{
+    width: 105px;
+    height: 40px;
+    background-color: #ffa930;
+    color: white;
+    font-size: 14px;
+    border: none;
+}
+
+/**/
+.input__login{
+    height: 28px;
+    width: 135px;
+    padding: 0px 10px;
+    font-size: 15px;
+}
+.form__select{
+    width: 100px;
+    height: 32px;
+}
+._enter{
+    width: 90px;
+    height: 32px;
+    background-color: #1482d0;
+    border-radius: 3px;
+    font-size: 14px;
+    margin-left: 5px;
+}
+._enter:hover{
+    background-color: #0077CC;
+}
+
+
