@@ -1,0 +1,61 @@
+@import "../../common/colors.less";
+.link{
+  font-size: 15px;
+  text-decoration: none;
+  &:hover{
+    text-decoration: underline;
+  }
+  &._bold{
+    font-weight: bold;
+  }
+  &._hover-color:hover {
+    color: #f8ad6f;
+    text-decoration: none;
+  }
+  &._size-s {
+    font-size: 12px;
+  }
+  &._size-m {
+    font-size: 13px;
+  }
+
+  &._category{
+       color: @color-text;
+          &:hover{
+            text-decoration: none;
+            padding-bottom: 8.5px;
+            border-bottom: 1.2px solid @color-box-shodow;
+              }
+           &:focus{
+            font-weight: bold;
+             color: @color-main-mail;
+             padding-bottom: 8.5px;
+            border-bottom: 1.2px solid @color-main-mail;
+            }
+  }
+  &._help{
+      color: @color-text;
+      text-decoration: underline;
+      margin-right: auto;
+        &:hover {
+           text-decoration: none;
+        }
+   }
+  &._news{
+      margin-top: 8.5px;
+    & label{
+      font-size: 14px;
+      font-weight: bold;
+      color: @color-text;
+    }
+  }
+
+  &._sidebar{
+      display: flex;
+      align-items: center;
+  }
+
+  &._color-link-support{
+    color: @color-link-help;
+  }
+}

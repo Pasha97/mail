@@ -3,167 +3,179 @@
 <head>
     <meta charset="UTF-8">
     <title>Mail.ru</title>
-    <!--<link rel="stylesheet" href="assets/team/base/base.css">-->
-    <link rel="stylesheet" href="assets/styles/common/style.css">
-
-<body>
+    <link rel="stylesheet" href="src/assets/themes/base/fonts/styles/css/common/style.css">
+<body class="_mail">
 <div class="page">
+
 <header class="header">
+
     <nav class="nav">
-        <div class="nav__item"><a href="" class="link _hover-orange _bold">Mail.Ru</a></div>
-        <div class="nav__item"><a href="" class="link _hover-orange">Почта</a></div>
-        <div class="nav__item"><a href="" class="link _hover-orange">Мой Мир</a></div>
-        <div class="nav__item"><a href="" class="link _hover-orange">Одноклассники</a></div>
-        <div class="nav__item"><a href="" class="link _hover-orange">Игры</a></div>
-        <div class="nav__item"><a href="" class="link _hover-orange">Знакомства</a></div>
-        <div class="nav__item"><a href="" class="link _hover-orange">Новости</a></div>
-        <div class="nav__item"><a href="" class="link _hover-orange">Поиск</a></div>
+        <div class="nav__item"><a href="" class="link _size-s _hover-color _bold">Mail.Ru</a></div>
+        <div class="nav__item"><a href="" class="link _size-s  _hover-color">Почта</a></div>
+        <div class="nav__item"><a href="" class="link _size-s  _hover-color">Мой Мир</a></div>
+        <div class="nav__item"><a href="" class="link _size-s  _hover-color">Одноклассники</a></div>
+        <div class="nav__item"><a href="" class="link _size-s  _hover-color">Игры</a></div>
+        <div class="nav__item"><a href="" class="link _size-s  _hover-color">Знакомства</a></div>
+        <div class="nav__item"><a href="" class="link _size-s  _hover-color">Новости</a></div>
+        <div class="nav__item"><a href="" class="link _size-s  _hover-color">Поиск</a></div>
         <div class="nav__item _right">
-            <select class="nav__select link">
-                <option value="">Все проекты</option>
-                <option value="">Авто</option>
-                <option value="">Бонус</option>
-                <option value="">Гороскопы</option>
-                <option value="">Дети</option>
+            <select class="select _header">
+                <option class="select__item" value="">Все проекты</option>
+                <option value="select__item">Авто</option>
+                <option value="select__item">Бонус</option>
+                <option value="select__item">Гороскопы</option>
+                <option value="select__item">Дети</option>
             </select>
         </div>
-        <div class="nav__item"><a href="" class="link">Регистрация</a></div>
-        <div class="nav__item"><a href="" class="link">Вход</a></div>
+        <div class="nav__item"><a href="" class="link _size-s  _hover-color">Регистрация</a></div>
+        <div class="nav__item"><a href="" class="link _size-s  _hover-color">Вход</a></div>
     </nav>
 
 </header>
 
 <main class="main">
-
-    <div class="sidebar-left">  
-
+    <div class="sidebar-left">
         <div class="login">
-            <img src="assets/images/icons/logo.jpg" alt="" class="img-logotype">
+            <img src="src/assets/themes/base/fonts/images/icons/logo.jpg" alt="" class="logo-mail">
             <main class="login__main">
                 <div class="block-header">
-                <a href="" class="link-sidebar _bold">Почта</a>
+                <a href="" class="link _bold">Почта</a>
                 <div class="_right">
-                <img src="assets/cloud.png" alt="" class="img">
-                <img src="assets/calend.png" alt="" class="img">
-        </div>
+                    <svg class="svg _small">
+                        <use href="#icon-cloud"></use>
+                    </svg>
+                    <svg class="svg _small">
+                        <use href="#icon-calendar"></use>
+                    </svg>
+                </div>
                 </div>
                 <form class="form">
-                    <div class="block-email">
-                <input type="email" class="input__login" placeholder="Имя ящика"/>
-                <select class="form__select">
-                    <option value="">@mail.ru </option>
-                    <option value="">@inbox.ru</option>
-                    <option value="">@list.ru</option>
-                    <option value="">@bk.ru</option>
+                    <div class="form__header">
+                <input type="email" class="input _login" placeholder="Имя ящика"/>
+                <select class="select _login">
+                    <option value="select__item">@mail.ru </option>
+                    <option value="select__item">@inbox.ru</option>
+                    <option value="select__item">@list.ru</option>
+                    <option value="select__item">@bk.ru</option>
                 </select>
                     </div>
-                <input type="password" class="input__login" placeholder="Пароль"/>
-                <input type="button" class="input__button _enter" value="Войти"/>
+                <input type="password" class="input _login" placeholder="Пароль"/>
+                <button class="button _enter">Войти</button>
                     <div class="block-help">
-                    <a href="" class="link-help"> Забыли пароль?</a>
-                        <div>
-                <input type="checkbox" class="form__checkbox " name="checkbox" />
-                        <lable for="checkbox" class="link-help"> Запомнить </lable>
-                        </div>
+                    <a href="" class="link  _help _size-m"> Забыли пароль?</a>
+
+                <input type="checkbox" class="input _checkbox " name="checkbox" />
+                        <label class="label _color"> Запомнить </label>
                     </div>
                 </form>
             </main>
 
-            <footer class="login__footer">
-                <a href="" class="link-sidebar" >Регистрация нового ящика</a>
+            <footer class="login__footer _mail">
+                <a href="" class="link _sidebar" >Регистрация нового ящика</a>
             </footer>
         </div>
-
         <aside class="sidebar-left__aside">
             <nav class="nav-aside">
-                <div class="nav-aside__item"> <a href="" class=" link-sidebar _icon-icq">ICQ</a></div>
-                <div class="nav-aside__item"> <a href="" class="link-sidebar"><img src="assets/logo-mymir.png" alt="" class="img-logo">Мой Мир</a></div>
-                <div class="nav-aside__item"> <a href="" class="link-sidebar"><img src="assets/logo-odnoklassniki.png" alt="" class="img-logo">Одноклассники</a></div>
-                <div class="nav-aside__item"> <a href="" class="link-sidebar"><img src="assets/logo-ula.jpg" alt="" class="img-logo">Юла</a></div>
-                <div class="nav-aside__item"> <a href="" class="link-sidebar"><img src="assets/logo-goroskop.png" alt="" class="img-logo">Гороскоп: Рыбы</a></div>
-                <div class="nav-aside__item"> <a href="" class="link-sidebar"><img src="assets/logo-TV.png" alt="" class="img-logo">ТВ-программа</a></div>
-                <div class="nav-aside__item"> <a href="" class="link-sidebar"><img src="assets/logo-pandao.jpg" alt="" class="img-logo">Pandao</a></div>
+                <div class="nav-aside__item"> <a href="" class="link _sidebar"><div class="logo  _icq"> </div>ICQ</a></div>
+                <div class="nav-aside__item"> <a href="" class="link _sidebar"><div class="logo  _mymir"> </div>Мой Мир</a></div>
+                <div class="nav-aside__item"> <a href="" class="link _sidebar"><div class="logo  _odnoklassniki"> </div>Одноклассники</a></div>
+                <div class="nav-aside__item"> <a href="" class="link _sidebar"><div class="logo  _ula"> </div>Юла</a></div>
+                <div class="nav-aside__item"> <a href="" class="link _sidebar"><div class="logo  _goroskop"> </div>Гороскоп: Рыбы</a></div>
+                <div class="nav-aside__item"> <a href="" class="link _sidebar"><div class="logo  _TV"> </div>ТВ-программа</a></div>
+                <div class="nav-aside__item"> <a href="" class="link _sidebar"><div class="logo  _pandao"> </div>Pandao</a></div>
             </nav>
         </aside>
 
-        <div class="banners__sidebar-left banners">
-            <a href="#"><img src=""/></a>
+        <div class="sidebar-left__banners">
+            <a href="#"><div class="logo _banners"> </div></a>
         </div>
     </div>
 
     <div class="center">
         <nav class="nav-panel">
-            <div class="nav-panel__item"><a href="" class="link _l _underline _bold ">Поиск в интернете</a></div>
-            <div class="nav-panel__item"><a href="" class="link _l _underline"> Картинки</a></div>
-            <div class="nav-panel__item"><a href="" class="link _l _underline">Видео</a></div>
-            <div class="nav-panel__item"><a href="" class="link _l _underline">Приложения</a></div>
-            <div class="nav-panel__item"><a href="" class="link _l _underline">Ответы</a></div>
+            <div class="nav-panel__item"><a href="" class="link  _bold ">Поиск в интернете</a></div>
+            <div class="nav-panel__item"><a href="" class="link "> Картинки</a></div>
+            <div class="nav-panel__item"><a href="" class="link">Видео</a></div>
+            <div class="nav-panel__item"><a href="" class="link">Приложения</a></div>
+            <div class="nav-panel__item"><a href="" class="link">Ответы</a></div>
         </nav>
         <div class="search">
-        <input type="search" class="input__search"/>
-        <input type="button" class="input__button" value="Найти"/>
+        <input type="search" class="input _search"/>
+            <button class="button _search">Найти</button>
         </div>
         <div class="content">
         <div class="content__main">
             <nav class="nav-category">
-                <div class="nav-category__item"><a href="#" class="link-category ">Новости</a></div>
-                <div class="nav-category__item"><a href="#" class="link-category">Москва</a></div>
-                <div class="nav-category__item"><a href="#" class="link-category">Спорт</a></div>
-                <div class="nav-category__item"><a href="#" class="link-category">Леди</a></div>
-                <div class="nav-category__item"><a href="#" class="link-category">Авто</a></div>
-                <div class="nav-category__item"><a href="#" class="link-category">Кино</a></div>
-                <div class="nav-category__item"><a href="#" class="link-category">Hi-Tech</a></div>
-                <div class="nav-category__item"><a href="#" class="link-category">Игры</a></div>
+                <div class="nav-category__item"><a href="#" class="link _category ">Новости</a></div>
+                <div class="nav-category__item"><a href="#" class="link _category">Москва</a></div>
+                <div class="nav-category__item"><a href="#" class="link _category">Спорт</a></div>
+                <div class="nav-category__item"><a href="#" class="link _category">Леди</a></div>
+                <div class="nav-category__item"><a href="#" class="link _category">Авто</a></div>
+                <div class="nav-category__item"><a href="#" class="link _category">Кино</a></div>
+                <div class="nav-category__item"><a href="#" class="link _category">Hi-Tech</a></div>
+                <div class="nav-category__item"><a href="#" class="link _category">Игры</a></div>
                 <div class="nav-category__item">
-                    <a href="#" class="link-category">&bull;&bull;&bull;</a>
-                    </div>
+                <svg class="svg _middle">
+                    <use href="#icon-ellipsis"></use>
+                </svg>
+                </div>
             </nav>
-            <div class= "banners__main banners">
-                <img src="assets/assets/images/icons/banner-big.jpg" alt="" class="img-banners _small"/>
-                <!--<div class="banners__content">-->
-                    <!--<h6>Захарова ответила на заявление Госдепа США по Крымскому мосту </h6>-->
-                <!--</div>-->
+            <div class= "banners _top">
+                <div class="logo__banners-main _top"></div>
+                <div class = "banners__content">
+                    <a href="" class="link">Азербайджан запустил альтернативу </a>
+                    <label class="label _color"> По новой трубе газ с 2020 года </label>
+                </div>
+
             </div>
             <section class="content__news">
-                <a href="" class="link-news">Захарова ответила на заявление Госдепа США по Крымскому мосту</a>
-                <a href="" class="link-news">Джигарханян госпитализирован в тяжелом состоянии</a>
-                <a href="" class="link-news">Джигарханян госпитализирован в тяжелом состоянии</a>
-                <a href="" class="link-news">Джигарханян госпитализирован в тяжелом состоянии</a>
-                <a href="" class="link-news">Джигарханян госпитализирован в тяжелом состоянии</a>
-                <a href="" class="link-news">Джигарханян госпитализирован в тяжелом состоянии</a>
-                <a href="" class="link-news">Джигарханян госпитализирован в тяжелом состоянии</a>
-                <a href="" class="link-news">Джигарханян госпитализирован в тяжелом состоянии</a>
-                <a href="" class="link-news">Джигарханян госпитализирован в тяжелом состоянии</a>
-                <a href="" class="link-news">Джигарханян госпитализирован в тяжелом состоянии</a>
+                <a href="" class="link _news">Путин ответила на заявление Госдепа США по Крымскому мосту</a>
+                <a href="" class="link _news">Поклонницы госпитализирован в тяжелом состоянии</a>
+                <a href="" class="link _news">Гусеницы госпитализирован в тяжелом состоянии</a>
+                <a href="" class="link _news">Джигарханян госпитализирован в тяжелом состоянии</a>
+                <a href="" class="link _news">Россия госпитализирован в тяжелом состоянии</a>
+                <a href="" class="link _news">Джигарханян госпитализирован в тяжелом состоянии</a>
+                <a href="" class="link _news"> Джигарханян госпитализирован в тяжелом состоянии</a>
+                <a href="" class="link _news"><label class="label">спорт </label>Джигарханян госпитализирован в тяжелом состоянии</a>
+                <a href="" class="link _news"><label class="label">спорт </label>Джигарханян госпитализирован в тяжелом состоянии</a>
+                <a href="" class="link _news"><label class="label">кино </label>Джигарханян госпитализирован в тяжелом состоянии</a>
             </section>
-            <div class="banners__main banners">
-                <img src="assets/assets/images/icons/banner-big.jpg" alt="" class="img-banners _small"/>
+            <a href="" class="link">
+            <div class="banners _bottom">
+                <div class="logo__banners-main _bottom"></div>
+                <div class = "banners__content">
+                    <label class="label _color _size-m"> Азербайджан запустил альтернативу </label>
+                    <label class="label _color"> По новой трубе газ с 2020 года </label>
+                </div>
             </div>
-            <div class="main__more">
-                <div class="block-1"></div>
-                <div class="block-2"> </div>
-                <div class="block-3"></div>
-                <div class="block-4"></div>
+            </a>
+            <div class="content__more">
+                <div class="widgets _big"></div>
+                <div class="widgets _small"> </div>
+                <div class="widgets _small _background-color"></div>
+                <div class="widgets _medium"></div>
             </div>
         </div>
-hello
+
         <div class="sidebar-right">
             <aside class="sidebar-right__aside">
-                <img src="assets/images/icons/banner-big.jpg" alt="" class="img-banners">
+                <img src="src/assets/themes/base/fonts/images/icons/banner-big.jpg" alt="" class="images-banners">
             </aside>
             <div class="nav-games">
-                <div class="nav-games__items"><a href="" class="link-sidebar-right _bold">Игры</a></div>
-                <div class="nav-games__items"><a href="" class="link-sidebar-right">Мини-игры</a></div>
+                <div class="nav-games__items"><a href="" class="link _bold">Игры</a></div>
+                <div class="nav-games__items"><a href="" class="link">Мини-игры</a></div>
             </div>
             <div class="sidebar-right__games">
-                <img src="assets/images/icons/game-1.jpg" alt="" class="img-game">
-                <img src="assets/images/icons/game-2.jpg" alt="" class="img-game">
+                <img src="src/assets/themes/base/fonts/images/icons/game-1.jpg" alt="" class="images-game">
+                <img src="src/assets/themes/base/fonts/images/icons/game-2.jpg" alt="" class="images-game">
             </div>
-            <div class="sidebar-right__support">
-                <div class="support__item"><a href="" class="link-support">Лента</a></div>
-                <div class="support__item"><a href="" class="link-support">О компании</a></div>
-                <div class="support__item"><a href="" class="link-support">Помощь</a></div>
-                <div class="support__item"><a href="" class="link-support">&bull;&bull;&bull;</a></div>
+            <div class="nav-support">
+                <div class="nav-support__item"><a href="" class="link _color-link-support _size-m ">Лента</a></div>
+                <div class="nav-support__item"><a href="" class="link _color-link-support _size-m ">О компании</a></div>
+                <div class="nav-support__item"><a href="" class="link _color-link-support _size-m ">Помощь</a></div>
+                <div class="nav-support__item"><a href="" class="link _color-link-support _size-m "><svg class="svg _small">
+                    <use href="#icon-ellipsis"></use>
+                </svg></a></div>
             </div>
         </div>
         </div>
@@ -171,5 +183,9 @@ hello
 </main>
 
 </div>
+<div class="hidden">
+    <!-- inject:svg --><svg xmlns="http://www.w3.org/2000/svg"><symbol id="icon-calendar" viewBox="0 0 45.836 45.836"><g fill="#006DF0"><path d="M10.553 21.354l.722 3.281 3.583-1.717h.054v14.909h4.283V19.034h-3.672zM33.013 26.854c-1.326-.953-3.146-1.356-4.938-1.356-.463 0-.811.007-1.215.064l.404-2.881h7.312v-3.646H24.202l-1.24 9.86c.781-.116 1.501-.168 2.541-.168 3.756 0 5.286 1.188 5.286 3.123 0 1.993-1.937 2.86-3.755 2.86-1.704 0-3.408-.52-4.245-.923l-.781 3.293c1.041.548 2.948 1.068 5.229 1.068 5.055 0 8.06-3.091 8.06-6.585-.001-2.197-.867-3.756-2.284-4.709z"/><path d="M40.446 2.844v2.292c0 2.311-1.896 4.223-4.205 4.223h-.215c-2.31 0-4.225-1.913-4.225-4.223V2.54h-4.6v2.596c0 2.311-1.914 4.223-4.224 4.223h-.212c-2.312 0-4.208-1.913-4.208-4.223V2.54H13.88v2.596c0 2.311-1.853 4.223-4.163 4.223h-.214c-2.311 0-4.188-1.913-4.188-4.223V2.879A6.688 6.688 0 0 0 .716 9.258v29.886a6.686 6.686 0 0 0 6.708 6.691h30.997a6.678 6.678 0 0 0 6.699-6.691V9.258a6.728 6.728 0 0 0-4.674-6.414zm1.348 35.683c0 2.148-1.727 3.898-3.875 3.898H7.93c-2.148 0-3.881-1.75-3.881-3.898V17.295a2.62 2.62 0 0 1 2.64-2.624h32.472a2.614 2.614 0 0 1 2.634 2.624l-.001 21.232z"/><path d="M9.506 7.296h.213a2.158 2.158 0 0 0 2.18-2.161V2.164c0-.6-.235-1.144-.626-1.54-.004-.003-.004-.008-.007-.011-.003-.003-.004.012-.006.009a2.17 2.17 0 0 0-1.542-.62h-.213c-.603 0-1.147.227-1.544.62-.001.003-.003-.003-.006-.001-.004.004-.013.003-.016.005A2.18 2.18 0 0 0 7.3 2.163v2.973c0 .546.206 1.03.537 1.414a2.183 2.183 0 0 0 1.669.746zM21.515 6.947l.018.007c.006.004.018-.008.023-.004.347.229.764.347 1.211.347h.213c.376 0 .729-.078 1.037-.245.004-.001.006.006.01.004.006-.004-.002-.004.006-.009a2.172 2.172 0 0 0 1.111-1.912V2.163c0-.713-.326-1.347-.854-1.748-.005-.003-.001-.007-.005-.01l.004.017a2.151 2.151 0 0 0-1.308-.419h-.213c-.567 0-1.083.199-1.472.552l-.002-.007c-.005.004-.024.004-.028.008a2.19 2.19 0 0 0-.723 1.608v2.974c-.001.75.395 1.414.972 1.809zM36.028 7.296h.213a2.21 2.21 0 0 0 1.678-.747c.331-.384.547-.867.547-1.414V2.164c0-.829-.477-1.55-1.154-1.924l-.018-.006a2.883 2.883 0 0 0-.238-.108l-.061-.023-.032-.011c-.022-.008-.047 0-.069-.007a2.19 2.19 0 0 0-.652-.083h-.213c-.113 0-.209-.007-.318.009a2.165 2.165 0 0 0-1.846 2.152v2.974a2.139 2.139 0 0 0 2.163 2.159z"/></g></symbol><symbol id="icon-cloud" viewBox="0 0 19.135 19.135"><path d="M16.122 9.194h-.077A3.699 3.699 0 0 0 10.56 6.39a4.389 4.389 0 1 0-8.229 2.886 3.015 3.015 0 0 0 .684 5.949l.489-.021H15.59l.531.021a3.015 3.015 0 0 0 .001-6.031z" fill="#006DF0"/></symbol><symbol id="icon-ellipsis" viewBox="0 0 408 408"><path d="M51 153c-28.05 0-51 22.95-51 51s22.95 51 51 51 51-22.95 51-51-22.95-51-51-51zm306 0c-28.05 0-51 22.95-51 51s22.95 51 51 51 51-22.95 51-51-22.95-51-51-51zm-153 0c-28.05 0-51 22.95-51 51s22.95 51 51 51 51-22.95 51-51-22.95-51-51-51z"/></symbol></svg><!-- endinject -->
+</div>
+<script src="dist/app.components.js"> </script>
 </body>
 </html>

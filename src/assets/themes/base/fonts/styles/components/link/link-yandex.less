@@ -1,0 +1,34 @@
+@import "../../common/colors.less";
+
+ .link-yandex {
+   font-size: 15px;
+   text-decoration: none;
+   &._color {
+     color: @color-link-yandex;
+      &-light{
+       color: lighten(@color-link-yandex, 35%);
+     }
+     &-main-light{
+       color: lighten(@color-main-yandex, 70%);
+     }
+   }
+   &._bold {
+     font-weight: bold;
+   }
+   &._hover-color:hover {
+     color: #f8ad6f;
+     text-decoration: none;
+   }
+   &._size-s {
+     font-size: 12px;
+   }
+   &._size-m {
+     font-size: 13px;
+   }
+   &._size-xxl{
+     font-size: 18px;
+   }
+   &:hover {
+     color: @color-hover-yandex;
+   }
+ }
