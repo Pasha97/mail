@@ -1,0 +1,45 @@
+{
+  "name": "mail",
+  "version": "1.0.0",
+  "description": "",
+  "main": "Gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack -p",
+    "watch": "webpack --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Pasha97/mail.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Pasha97/mail/issues"
+  },
+  "homepage": "https://github.com/Pasha97/mail#readme",
+  "devDependencies": {
+    "babel": "^6.23.0",
+    "babel-loader": "^7.1.4",
+    "browser-sync": "^2.24.4",
+    "glob": "^7.1.2",
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^5.0.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-inject": "^4.3.2",
+    "gulp-less": "^3.5.0",
+    "gulp-minify-css": "^1.2.4",
+    "gulp-rename": "^1.2.3",
+    "gulp-svgmin": "^1.2.4",
+    "gulp-svgstore": "^6.1.1",
+    "gulp-typescript": "^4.0.2",
+    "gulp-util": "^3.0.8",
+    "gulp-webpack": "^1.5.0",
+    "js-loader": "^0.1.1",
+    "npm-watch": "^0.3.0",
+    "ts-loader": "^4.3.1",
+    "typescript": "^2.9.1",
+    "webpack": "^4.11.1",
+    "webpack-cli": "^3.0.3"
+  }
+}
