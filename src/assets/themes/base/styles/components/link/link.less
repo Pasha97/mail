@@ -1,0 +1,78 @@
+@import "../../common/colors.less";
+@import "../../common/fonts.less";
+
+.link {
+    font-size: @font-size-l;
+    text-decoration: none;
+
+    &:hover {
+        text-decoration: underline;
+    }
+
+    &._bold {
+        font-weight: bold;
+    }
+
+    &._hover-color:hover {
+        color: #f8ad6f;
+        text-decoration: none;
+    }
+
+    &._size {
+
+        &-s {
+            font-size: @font-size-s;
+        }
+
+        &-m {
+            font-size: @font-size-m;
+        }
+        &-xl {
+            font-size: @font-size-xl;
+        }
+        &-xxl {
+            font-size: 30px;
+        }
+    }
+
+
+    &._category {
+        color: @color-text;
+
+        &:hover {
+            text-decoration: none;
+            padding-bottom: 8.5px;
+            border-bottom: 1.2px solid @color-box-shodow;
+        }
+
+        &:focus {
+            font-weight: bold;
+            color: @color-main-mail;
+            padding-bottom: 8.5px;
+            border-bottom: 1.2px solid @color-main-mail;
+        }
+    }
+
+    &._help {
+        color: @color-text;
+        text-decoration: underline;
+        margin-right: auto;
+
+        &:hover {
+            text-decoration: none;
+        }
+    }
+
+    &._news {
+        margin-top: 8.5px;
+    }
+
+    &._sidebar {
+        display: flex;
+        align-items: center;
+    }
+
+    &._color-link-support {
+        color: @color-link-help;
+    }
+}

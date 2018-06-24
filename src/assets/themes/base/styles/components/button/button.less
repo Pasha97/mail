@@ -1,0 +1,44 @@
+@import "../../common/colors.less";
+
+.button{
+  outline: none;
+  border: none;
+  font-size: 14px;
+  &._search{
+    color: white;
+    width: 106px;
+    height: 40px;
+    background-color: @color-search-yandex;
+    font-size: 17px;
+    padding-top: 2px;
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px;
+    &:hover{
+      background-color: darken(@color-search-yandex, 10%);
+    }
+  }
+  &._enter{
+    color: white;
+    height: 32px;
+    background-color: lighten(@color-main-mail, 4%);
+    border-radius: 3px;
+    padding: 0 25px;
+    margin-left: 3px;
+    &:hover{
+      background-color: @color-main-mail;
+    }
+  }
+  &._yandex{
+    font-size: 17px;
+    width: 86px;
+    //height: 35px;
+    background: transparent;
+    &-login{
+      margin: 20px 0px 15px;
+      width: 150px;
+      height: 30px;
+      background-color:lighten(@color-main-yandex,90%);
+      border-radius: 4px;
+    }
+  }
+}

@@ -1,0 +1,24 @@
+@import "../../common/colors.less";
+
+.banners {
+    display: flex;
+    margin-top: 12px;
+    width: 600px;
+    height: 89.5px;
+    &._top {
+        margin-top: 14px;
+    }
+    &._bottom {
+        border: 1px solid @color-border;
+
+    }
+    &:hover {
+        box-shadow: 0 0 10px @color-box-shodow;
+    }
+    &__content {
+        display: flex;
+        flex-direction: column;
+        margin: 29px 19px;
+    }
+}
+

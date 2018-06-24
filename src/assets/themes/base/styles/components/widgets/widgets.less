@@ -1,0 +1,58 @@
+@import "../../common/colors.less";
+
+.widgets {
+    display: flex;
+    margin: 5px 0 20px;
+    position: relative;
+    &._big {
+        flex-direction: column;
+        width: 210px;
+        height: 65px;
+        svg + a {
+         margin: 0 15px;
+        }
+    }
+    &._medium {
+        align-items: flex-end;
+        width: 180px;
+        height: 65px;
+        svg + div {
+            margin: 0 15px;
+        }
+    }
+    &._small {
+        align-items: flex-end;
+        width: 105px;
+        height: 65px;
+        svg + div {
+            margin: 0 15px;
+        }
+    }
+    &._weather {
+
+    }
+    &._traffic {
+
+    }
+    &._visited {
+
+    }
+    &._tv-program {
+
+    }
+    &._region {
+
+    }
+    &._afisha {
+
+    }
+
+    &:hover{
+        .control{
+        transition: 1s;
+        visibility: visible;
+        opacity: 1;
+        }
+    }
+}
+

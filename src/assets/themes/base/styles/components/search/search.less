@@ -1,0 +1,32 @@
+@import "../../common/colors.less";
+
+.search {
+    display: flex;
+    flex-direction: row;
+    margin: 8.5px 0px;
+    &._yandex {
+        margin: 10px 0px 8px;
+        align-items: center;
+        position: relative;
+        padding: 2px;
+        background-color: lighten(@color-search-yandex, 5%);
+        width: 89%;
+        min-width: 590px;
+
+        &:after {
+            content: '';
+            position: absolute; /* Абсолютное позиционирование */
+            right: -28px;
+            bottom: 0; /* Положение треугольника */
+            border: 18px solid transparent; /* Прозрачные границы */
+            border-left: 10px solid lighten(@color-search-yandex, 5%);
+        }
+    }
+
+    &__svg {
+        visibility: visible;
+        position: absolute;
+        top: 25%;
+        right: 12%;
+    }
+}

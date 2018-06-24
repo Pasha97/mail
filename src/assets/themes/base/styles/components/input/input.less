@@ -1,0 +1,38 @@
+@import "../../common/colors.less";
+
+.input {
+    outline: none;
+    font-size: 16px;
+
+    &._search {
+        padding: 10px 0px 10px 40px;
+        width: 90%;
+        color: @color-text;
+        border: 1px solid darken(@color-border, 40%);
+        border-right: none;
+        background: url("../../../images/svg/search.svg")10px no-repeat;
+        background-size: 18px;
+
+        &-yandex {
+            border: none;
+            width: 100%;
+            padding: 7px 10px;
+        }
+
+    }
+
+    &._login {
+        width: 54% ;
+        padding: 6px 10px;
+        font-size: 15px;
+        border: 1px solid @color-border;
+        color: @color-text;
+
+    }
+
+    &._checkbox {
+        margin-right: 10px;
+    }
+
+}
+

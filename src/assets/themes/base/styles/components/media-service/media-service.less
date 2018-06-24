@@ -1,0 +1,43 @@
+.media-service {
+    width: 100%;
+
+    &__images {
+        position: relative;
+        height: 76px;
+        border-radius: 8px;
+        &._1-canal {
+            background: url("/dist/images/icons/1-canal.png")no-repeat;
+            background-size: 100% 100%;
+        }
+
+        &._fifa {
+            background: url("/dist/images/icons/fifa.png") no-repeat;
+            background-size: 100% 100%;
+        }
+        &._ntv {
+            background: url("/dist/images/icons/ntv-canal.png") no-repeat;
+            background-size: 100% 100%;
+        }
+
+        &:hover {
+            transition: 0.5s;
+            opacity: 1;
+            box-shadow: @color-box-shodow 5px 5px 20px;
+            .play {
+                opacity: 0.9;
+                visibility: visible;
+            }
+            &.span {
+                color: black;
+            }
+        }
+
+    }
+    &__name {
+        display: flex;
+        justify-content: center;
+
+    }
+}
+
+

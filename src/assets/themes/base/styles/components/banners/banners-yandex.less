@@ -1,0 +1,28 @@
+@import "../../common/colors.less";
+
+.banners-yandex {
+    display: flex;
+    flex-direction: column;
+    padding: 10px 20px;
+    width: 280px;
+    height: 160px;
+    &__images {
+        width: 200px;
+        height: 100px;
+
+        &._yandex-top-banner {
+            background: url("/dist/images/icons/small-banner-yandex.jpg") no-repeat;
+            background-size: 150px 90px;
+        }
+    }
+
+    &__text {
+        margin: 5px 0px;
+    }
+
+    &__middle {
+        margin: 20px 0px;
+        width: 81%;
+        height: 88px;
+    }
+}

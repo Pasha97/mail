@@ -1,0 +1,25 @@
+@import "../../common/colors.less";
+
+.sidebar-left {
+    display: flex;
+    width: 300px;
+    flex-direction: column;
+
+    &__aside {
+        margin-top: 10px;
+    }
+
+    &__banners {
+        width: 100%;
+        margin-top: 43px;
+        height: 60px;
+        border: 1px solid @color-border;
+        border-radius: 2px;
+
+        &:hover {
+            box-shadow: 0 0 10px @color-box-shodow;
+        }
+
+    }
+
+}
