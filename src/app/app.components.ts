@@ -18,7 +18,7 @@ setTimeout(function dateTime(): void {
 function   goToTop(scrollPosition: number): void {
     let up: HTMLElement = document.querySelector(".up");
 
-    if (scrollPosition >= 500) {
+    if (scrollPosition >= 800) {
         up.style.visibility = "visible";
         up.style.transition = "3s";
         up.style.opacity = "1";
@@ -40,7 +40,7 @@ function   goToTop(scrollPosition: number): void {
 
 let onScroll = debounce(async function (){
     try {
-        let bottom: HTMLElement = document.querySelector(".container__bottom"),
+        let bottom: any = document.querySelector(".container__bottom"),
             scrollMax: number = Math.max(
                 document.body.scrollHeight, document.documentElement.scrollHeight,
                 document.body.offsetHeight, document.documentElement.offsetHeight,
@@ -51,7 +51,7 @@ let onScroll = debounce(async function (){
         goToTop(ScrollPosition);
 
         if ((ScrollPosition + window.innerHeight) === scrollMax) {
-            let loader: HTMLElement = document.querySelector(".loader");
+            let loader: any = document.querySelector(".loader");
             loader.style.visibility = "visible";
             loader.style.opacity = "1";
 
@@ -62,13 +62,13 @@ let onScroll = debounce(async function (){
             });
 
             await promise;
-            clearStyle(loader, "opacity, visibility");
-            // clearStyle(loader,"visibility");
+            loader.style.visibility = "";
+            loader.style.opacity = "";
         }
     } catch (err) {
         alert("Error");
     }
-}, 250);
+}, 1000);
 
 addEventListener("scroll", onScroll);
 
@@ -107,24 +107,22 @@ function createLenta(): void {
     }
 }
 
-let element: HTMLElement, styles: string;
 
-// function clearStyle(a: HTMLElement): any {
-//
-//     return a.setAttribute("style", " ");
+// function applyStyles(element: HTMLElement, styles: {[style: string]: string}): void {
+//     for (let styleName in styles) {
+//         if (styles.hasOwnProperty(styleName)) {
+//             element.style[<any>styleName] = styles[styleName];
+//         }
+//     }
 // }
 
-function clearStyle(element: HTMLElement, styles: string): void {
-    let getStyleBlock: CSSStyleDeclaration = getComputedStyle(element),
-        arrStyle: string[] = styles.split(", ");
-    for (let i = 0; i < getStyleBlock.length; i++) {
-        for (let j = 0; j < arrStyle.length; j++) {
-            if (getStyleBlock[i] === arrStyle[j]) {
-                getStyleBlock[i]
-            }
-        }
-    }
-}
+// function clearStyles(element: HTMLElement, styles: {[style: string]: string}): void {
+//     for (let styleName in styles) {
+//         if (styles.hasOwnProperty(styleName)) {
+//             element.style[<any>styleName] = styles[styleName];
+//         }
+//     }
+// }
 
 
 //debounce//
@@ -186,3 +184,5 @@ function resize(func: any, limit: number) {
 window.addEventListener('resize', resize(function () {
     console.log("resize");
 }, 1000));
+
+
